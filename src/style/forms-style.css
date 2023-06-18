@@ -1,0 +1,167 @@
+@import './styleVar.css';
+
+.form-body{
+    background-color: var(--bc-theme);
+    position: absolute;
+    width: 50vw;
+    top:50%; left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    border-radius: 2rem;
+    padding: 50px;
+}
+
+.toMain{
+   color: var(--form-elements);
+   text-decoration: none;
+   font-size: 20px;
+   padding: 5px 10px;
+   border: 2px solid var(--form-elements);
+   border-radius: 2rem;
+}
+
+.form-one-row-input{
+    width: 50%;
+    height: 30px;
+    border: none;
+    background-color: var(--form-elements);
+}
+
+.textForm-text-input{
+    width: 50%;
+    height: 70px;
+    border: none;
+    background-color: var(--form-elements);
+}
+
+.form-addBtn{
+    width: 80%;
+    padding: 10px;
+    background-color: var(--form-elements);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color:var(--btn-color);
+}
+ 
+.list-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.check-list-element {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--btn-bc);
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+    cursor: pointer;
+}
+  
+  .check-list-element:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--btn-bc);
+}
+
+.addTask-link{
+    width: 40vw;
+    margin-top: 30px ;
+    border-top: 3px solid var(--form-elements);
+    border-bottom: 3px solid var(--form-elements);
+    color: var(--form-elements);
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.listForm-list{
+    width:60%;
+    margin: 0 auto;
+}
+
+.listForm-task{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.listForm-task-false{
+    width: 20px;
+    height: 20px;
+    background-color: var(--red); margin-left: auto;
+}
+
+.listForm-task-true{
+    width: 20px;
+    height: 20px;
+    background-color: var(--green);
+    margin-left: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 5% auto;
+    font-size: 20px;
+}
+
+th, td {
+    width: 50%;
+    padding: 8px; 
+    border-bottom: 1px solid white;
+}
+
+.listForm-task-title{
+    color: var(--form-elements);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.list-btn{
+    display: block;
+    margin-top: 100px;
+}
+
+@media (max-width:720px) { 
+    .form-body{
+        width: 90vw;
+        padding: 30px;
+    }
+ 
+    .form-one-row-input, .textForm-text-input, .form-addBtn, table{
+        width: 80%;
+    }
+ 
+    .addTask-link{
+        width: 80vw;
+    }
+    
+    .listForm-list{
+        width:100%;
+    }
+   
+    table {
+        width: 80%;
+    }
+
+    .list-btn{
+        margin-top: 100px;
+    }
+}

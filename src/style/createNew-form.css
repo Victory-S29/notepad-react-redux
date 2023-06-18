@@ -1,0 +1,54 @@
+@import './styleVar.css';
+
+.empty-notes-create{
+    background-color: var(--bc-theme);
+    position: absolute;
+    width: 50vw;
+    top:50%; left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    border-radius: 2rem;
+    padding: 50px;
+}
+
+.empty-notes-create-title{
+    color: var(--form-elements);
+    margin-bottom: 30px;
+}
+
+.empty-notes-create-list{
+  list-style: none;
+  padding: 30px;
+  border: 3px solid var(--form-elements);
+  border-radius: 2rem;
+  gap:30px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-note-link{
+    color: var(--form-elements);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width:720px) { 
+    .empty-notes-create{
+        width: 90vw;
+        gap:20px;
+        padding: 50px;
+        margin: 0 auto;
+    }
+    
+    .empty-notes-create-title{
+        margin-bottom: 30px;
+    }
+    
+    .empty-notes-create-list{
+      padding: 30px;
+    }
+}
