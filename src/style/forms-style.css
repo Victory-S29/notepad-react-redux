@@ -135,6 +135,7 @@ th, td {
 }
 
 .list-btn{
+    width: 50vw;
     display: block;
     margin-top: 100px;
 }
@@ -163,5 +164,6 @@ th, td {
 
     .list-btn{
         margin-top: 100px;
+        width: 80vw;
     }
 }
